@@ -7,9 +7,9 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <h2>Welcome to react_fitness_log</h2>
+          <h2 className="pangolin">Welcome to react_fitness_log</h2>
         </div>
-        <p>Let us get into shape</p>
+        <p className="pangolin">Let us get into shape</p>
       </div>
     );
   }
