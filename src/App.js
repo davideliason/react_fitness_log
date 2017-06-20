@@ -13,7 +13,7 @@ class App extends Component {
          <div className = "App">
             <div className = "App-header">
             </div>
-            <Workout />
+            <Workout date="Tuesday" />
          </div>
       );
   }

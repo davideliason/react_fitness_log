@@ -10,7 +10,7 @@ class Workout extends Component {
 
 		return (
 			   <div>
-					<h3 style={styleWorkout}>Workout</h3>
+					<h3 style={styleWorkout}>Workout {this.props.date}</h3>
 				</div>
 			);
 	}
