@@ -1,4 +1,10 @@
 .App {
   text-align: center;
+  margin: 0px;
+  padding: 0px;
 }
 
+.App-header {
+  background-color: blue;
+  height: 200px;
+}
