@@ -3,7 +3,10 @@ import React, {Component} from 'react';
 class Workout extends Component {
 	constructor(props) {
     super(props);
-    this.state = {date: new Date()};
+    this.state = {
+    	date: new Date(),
+        number: 0
+     };
 	}
 
 	componentDidMount(){
@@ -36,6 +39,7 @@ class Workout extends Component {
 		return (
 			   <div>
 					<h3 style={styleWorkout}>Workout {this.state.date.toLocaleTimeString()}</h3>
+					<h4> Number: {this.state.number} </h4>
 				</div>
 			);
 	}
