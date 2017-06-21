@@ -8,6 +8,9 @@ class Workout extends Component {
 
 	componentDidMount(){
 		console.log('Workout mounted');
+		this.status = "good";
+		console.log(this.status);
+		
 	}
 
 	componentWillUnmount(){
