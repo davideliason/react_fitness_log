@@ -6,6 +6,14 @@ class Workout extends Component {
 		this.state = {date: new Date()};
 	}
 
+	componentDidMount(){
+		console.log('Workout mounted');
+	}
+
+	componentWillUnmount(){
+		console.log("Workout unmounted");
+	}
+
 	render(){
 		var styleWorkout = {
 			backgroundColor: "green",
