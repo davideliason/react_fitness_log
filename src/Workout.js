@@ -1,21 +1,32 @@
 import React, {Component} from 'react';
 
 class Workout extends Component {
-	constructor(props){
-		super(props);
-		this.state = {date: new Date()};
+	constructor(props) {
+    super(props);
+    this.state = {date: new Date()};
 	}
 
 	componentDidMount(){
 		console.log('Workout mounted');
 		this.status = "good";
 		console.log(this.status);
-		
+
+		this.timerID = setInterval(() => 
+			this.tick(), 1000
+		);
 	}
 
-	componentWillUnmount(){
-		console.log("Workout unmounted");
+	componentWillUnmount() {
+    clearInterval(this.timerID);
+  }
+
+	tick(){
+		this.setState({
+			date: new Date()
+		});
 	}
+
+
 
 	render(){
 		var styleWorkout = {
