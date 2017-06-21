@@ -17,6 +17,9 @@ class Workout extends Component {
 		this.timerID = setInterval(() => 
 			this.tick(), 1000
 		);
+		this.setState({
+			number: this.state.number + this.props.increment
+		});
 	}
 
 	componentWillUnmount() {
