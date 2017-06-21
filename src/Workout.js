@@ -1,6 +1,11 @@
 import React, {Component} from 'react';
 
 class Workout extends Component {
+	constructor(props){
+		super(props);
+		this.state = {date: new Date()};
+	}
+
 	render(){
 		var styleWorkout = {
 			backgroundColor: "green",
@@ -10,7 +15,7 @@ class Workout extends Component {
 
 		return (
 			   <div>
-					<h3 style={styleWorkout}>Workout {this.props.date}</h3>
+					<h3 style={styleWorkout}>Workout {this.state.date.toLocaleTimeString()}</h3>
 				</div>
 			);
 	}
