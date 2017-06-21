@@ -26,8 +26,6 @@ class Workout extends Component {
 		});
 	}
 
-
-
 	render(){
 		var styleWorkout = {
 			backgroundColor: "green",
